@@ -1,0 +1,26 @@
+# gitignore file
+# written by Ben Weber 21.07.2013
+
+# ignore compiled stuff
+*.exe
+*.cache
+*.pdb
+*.dll.config
+*.dll
+*.vsto
+*.PhishingReporter.dll.manifest
+
+# folders
+obj
+bin
+
+# vs stuff
+*.suo
+*.csproj.user
+
+# ReSharper stuff
+Source/_ReSharper*/
+*.sln.DotSettings.user
+
+# StyleCop stuff
+Source/StyleCop.Cache

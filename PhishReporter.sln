@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupPhishAddIn", "SetupPhishAddIn\SetupPhishAddIn.vdproj", "{4B6FAA5F-E98A-4E6A-9CE0-138C0345D810}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhishingReporter", "PhishingReporter\PhishingReporter.csproj", "{6B0374AD-B799-4824-98FA-7C6B76301854}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		DVD-5|Any CPU = DVD-5|Any CPU
+		Release|Any CPU = Release|Any CPU
+		SingleImage|Any CPU = SingleImage|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B6FAA5F-E98A-4E6A-9CE0-138C0345D810}.CD_ROM|Any CPU.ActiveCfg = Release
+		{4B6FAA5F-E98A-4E6A-9CE0-138C0345D810}.Debug|Any CPU.ActiveCfg = Debug
+		{4B6FAA5F-E98A-4E6A-9CE0-138C0345D810}.DVD-5|Any CPU.ActiveCfg = Debug
+		{4B6FAA5F-E98A-4E6A-9CE0-138C0345D810}.Release|Any CPU.ActiveCfg = Release
+		{4B6FAA5F-E98A-4E6A-9CE0-138C0345D810}.SingleImage|Any CPU.ActiveCfg = Release
+		{6B0374AD-B799-4824-98FA-7C6B76301854}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{6B0374AD-B799-4824-98FA-7C6B76301854}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{6B0374AD-B799-4824-98FA-7C6B76301854}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B0374AD-B799-4824-98FA-7C6B76301854}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B0374AD-B799-4824-98FA-7C6B76301854}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B0374AD-B799-4824-98FA-7C6B76301854}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{6B0374AD-B799-4824-98FA-7C6B76301854}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B0374AD-B799-4824-98FA-7C6B76301854}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B0374AD-B799-4824-98FA-7C6B76301854}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{6B0374AD-B799-4824-98FA-7C6B76301854}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
