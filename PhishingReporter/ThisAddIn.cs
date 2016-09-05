@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Xml.Linq;
-using Outlook = Microsoft.Office.Interop.Outlook;
+﻿using Outlook = Microsoft.Office.Interop.Outlook;
 using Office = Microsoft.Office.Core;
 
 namespace PhishingReporter
@@ -12,9 +7,12 @@ namespace PhishingReporter
     {
         private Outlook.Inspectors inspectors;
 
+        private Outlook.MAPIFolder spamFolder;
+
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {
             inspectors = Application.Inspectors;
+            spamFolder = this.Application.GetNamespace("MAPI").GetDefaultFolder(Outlook.OlDefaultFolders.olFolderJunk);
         }
 
         private void ThisAddIn_Shutdown(object sender, System.EventArgs e)
@@ -34,5 +32,10 @@ namespace PhishingReporter
         }
         
         #endregion
+
+        public Outlook.MAPIFolder GetSpamFolder()
+        {
+            return spamFolder;
+        }
     }
 }

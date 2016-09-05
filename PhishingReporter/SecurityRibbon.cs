@@ -1,60 +1,32 @@
-﻿using System;
-using Microsoft.Office.Tools.Ribbon;
-using System.Windows.Forms;
-using Microsoft.Win32;
-using Microsoft.Office.Interop.Outlook;
-using PhishingReporter.Properties;
-
-namespace PhishingReporter
+﻿namespace PhishingReporter
 {
+    using System;
+    using Microsoft.Office.Tools.Ribbon;
+    using System.Windows.Forms;
+    using Microsoft.Office.Interop.Outlook;
+
+    using PhishingReporter.CustomMessageBox;
+    using PhishingReporter.Properties;
+    using PhishingReporter.Helpers;
+
     public partial class SecurityRibbon
     {
+        private Language lang;
+
         private void SecurityRibbon_Load(object sender, RibbonUIEventArgs e)
         {
-
+            lang = LanguageHelper.GetLanguage();
         }
 
         private void Phishing_Click(object sender, RibbonControlEventArgs e)
         {
             Explorer explorer = Globals.ThisAddIn.Application.ActiveExplorer();
 
-            string germanText = "Diese markierte Nachricht wird weitergeleitet an "
-                                + PhishReporterConfig.SecurityTeamEmailAlias + Environment.NewLine
-                                + "und aus Ihrem Posteingang entfernt. Möchten Sie fortfahren?";
-
-            string englishText = "The selected message will be forwarded to "
-                                 + PhishReporterConfig.SecurityTeamEmailAlias + Environment.NewLine
-                                 + " and removed from your inbox. Would you like to continue?";
-
-            string germanThankMessage = Resources.ThankYouMsgBox_Text_german;
-
-            string englishTankMessage = Resources.ThankYouMsgBox_Text_english;
-
-            string germanFakeMessageText = Resources.FakeMessage_Text_german;
-
-            string englishFakeMessageText = Resources.FakeMessage_Text_english;
-
-            string germanNoMessageText = Resources.NoMessageText_german;
-
-            string englishNoMessageText = Resources.NoMessageText_english;
-
-            string messageBoxText = englishText;
-            string thanksMessageText = englishTankMessage;
-            string fakeMessageText = englishFakeMessageText;
-            string noMessageText = englishNoMessageText;
-
-            if (IsLanguageGerman())
-            {
-                messageBoxText = germanText;
-                thanksMessageText = germanThankMessage;
-                fakeMessageText = germanFakeMessageText;
-                noMessageText = germanNoMessageText;
-            }
-
             if (explorer.Selection.Count == 1)
             {
-                DialogResult response = MessageBox.Show(messageBoxText, Resources.MessageBox_Title, MessageBoxButtons.YesNo);
-                if (response == DialogResult.Yes)
+                var dialog = new PhishingReporterMessageBox();
+                dialog.Show(TextHelper.MessageBoxText(lang));
+                if (dialog.DialogResult == DialogResult.OK && dialog.CustomDialogResult == CustomDialogResult.Phishing)
                 {
                     // TODO: Be able to handle multiple selected messages rather than just the first one.
                     MailItem phishEmail = explorer.Selection[1];
@@ -62,7 +34,7 @@ namespace PhishingReporter
 
                     if (IsFakeMail(phishEmail.HTMLBody))
                     {
-                        MessageBox.Show(fakeMessageText, Resources.MessageBox_Title, MessageBoxButtons.OK);
+                        MessageBox.Show(TextHelper.FakeMessageText(lang), Resources.MessageBox_Title, MessageBoxButtons.OK);
                         phishEmail.Delete();
                         return;
                     }
@@ -75,12 +47,17 @@ namespace PhishingReporter
                     reportEmail.Send();
                     phishEmail.Delete();
 
-                    MessageBox.Show(thanksMessageText, Resources.MessageBox_Title, MessageBoxButtons.OK);
+                    MessageBox.Show(TextHelper.ThankYouMessage(lang), Resources.MessageBox_Title, MessageBoxButtons.OK);
+                }
+                else if (dialog.DialogResult == DialogResult.OK && dialog.CustomDialogResult == CustomDialogResult.Spam)
+                {
+                    MailItem phishEmail = explorer.Selection[1];
+                    phishEmail.Move(Globals.ThisAddIn.GetSpamFolder());
                 }
             }
             else
             {
-                MessageBox.Show(noMessageText, Resources.MessageBox_Title, MessageBoxButtons.OK);
+                MessageBox.Show(TextHelper.NoEmailSelectedText(lang), Resources.MessageBox_Title, MessageBoxButtons.OK);
             }
         }
 
@@ -96,37 +73,6 @@ namespace PhishingReporter
                 {
                     return true;
                 }
-            }
-
-            return false;
-        }
-
-        private bool IsLanguageGerman()
-        {
-            int languageCode = 1033; //Default to english 1031 for German
-            int germanLanguageCode = 1031;
-
-            const string keyEntry = "UILanguage";
-
-            const string reg = @"Software\Microsoft\Office\14.0\Common\LanguageResources";
-            try
-            {
-                RegistryKey k = Registry.CurrentUser.OpenSubKey(reg);
-                if (k != null && k.GetValue(keyEntry) != null) languageCode = (int)k.GetValue(keyEntry);
-
-            }
-            catch { }
-
-            try
-            {
-                RegistryKey k = Registry.LocalMachine.OpenSubKey(reg);
-                if (k != null && k.GetValue(keyEntry) != null) languageCode = (int)k.GetValue(keyEntry);
-            }
-            catch { }
-
-            if (languageCode == germanLanguageCode)
-            {
-                return true;
             }
 
             return false;

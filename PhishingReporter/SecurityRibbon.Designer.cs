@@ -65,8 +65,7 @@
             this.Phishing.OfficeImageId = "TrustCenter";
             this.Phishing.ScreenTip = "Report phishing emails";
             this.Phishing.ShowImage = true;
-            this.Phishing.SuperTip = "Use this button to report suspicious emails to the Company Information Security t" +
-    "eam.";
+            this.Phishing.SuperTip = "Use this button to report suspicious emails to the Company Information Security team.";
             this.Phishing.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.Phishing_Click);
             // 
             // SecurityRibbon
