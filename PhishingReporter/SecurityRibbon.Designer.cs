@@ -34,11 +34,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Microsoft.Office.Tools.Ribbon.RibbonButton Phishing;
             this.tab1 = this.Factory.CreateRibbonTab();
             this.group1 = this.Factory.CreateRibbonGroup();
-            this.Phishing = this.Factory.CreateRibbonButton();
+            Phishing = this.Factory.CreateRibbonButton();
             this.tab1.SuspendLayout();
             this.group1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // tab1
             // 
@@ -51,22 +53,22 @@
             // 
             // group1
             // 
-            this.group1.Items.Add(this.Phishing);
+            this.group1.Items.Add(Phishing);
             this.group1.Label = "ICT Security";
             this.group1.Name = "group1";
             this.group1.Position = this.Factory.RibbonPosition.BeforeOfficeId("GroupQuickSteps");
             // 
             // Phishing
             // 
-            this.Phishing.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
-            this.Phishing.Image = global::PhishingReporter.Properties.Resources.Logo___ICT_SEC;
-            this.Phishing.Label = "Report Phishing";
-            this.Phishing.Name = "Phishing";
-            this.Phishing.OfficeImageId = "TrustCenter";
-            this.Phishing.ScreenTip = "Report phishing emails";
-            this.Phishing.ShowImage = true;
-            this.Phishing.SuperTip = "Use this button to report suspicious emails to the Company Information Security team.";
-            this.Phishing.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.Phishing_Click);
+            Phishing.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
+            Phishing.Image = global::PhishingReporter.Properties.Resources.Logo___ICT_SEC;
+            Phishing.Label = "Report Phishing";
+            Phishing.Name = "Phishing";
+            Phishing.OfficeImageId = "TrustCenter";
+            Phishing.ScreenTip = "Report phishing emails";
+            Phishing.ShowImage = true;
+            Phishing.SuperTip = "Use this button to report suspicious emails to the Company Information Security team.";
+            Phishing.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.Phishing_Click);
             // 
             // SecurityRibbon
             // 
@@ -78,6 +80,7 @@
             this.tab1.PerformLayout();
             this.group1.ResumeLayout(false);
             this.group1.PerformLayout();
+            this.ResumeLayout(false);
 
         }
 
@@ -85,7 +88,6 @@
 
         internal Microsoft.Office.Tools.Ribbon.RibbonTab tab1;
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup group1;
-        internal Microsoft.Office.Tools.Ribbon.RibbonButton Phishing;
     }
 
     partial class ThisRibbonCollection

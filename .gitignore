@@ -1,26 +1,17 @@
-# gitignore file
-# written by Ben Weber 21.07.2013
-
-# ignore compiled stuff
-*.exe
-*.cache
-*.pdb
-*.dll.config
-*.dll
-*.vsto
-*.PhishingReporter.dll.manifest
-
-# folders
-obj
-bin
-
-# vs stuff
+# User-specific files
 *.suo
-*.csproj.user
+*.user
+*.sln.docstates
 
-# ReSharper stuff
-Source/_ReSharper*/
-*.sln.DotSettings.user
+# Build results
 
-# StyleCop stuff
-Source/StyleCop.Cache
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+[Bb]in/
+[Oo]bj/
+*setup.exe
+
+SetupPhishAddIn\Debug
+SetupPhishAddIn\Release

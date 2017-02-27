@@ -61,20 +61,20 @@ namespace PhishingReporter.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Congratulations! The email you reported was a simulated phishing attack initiated by Company ICT. Good job!.
+        ///   Looks up a localized string similar to This function cannot be executed since the email origins within Company..
         /// </summary>
-        internal static string FakeMessage_Text_english {
+        internal static string CompanyMail_english {
             get {
-                return ResourceManager.GetString("FakeMessage_Text_english", resourceCulture);
+                return ResourceManager.GetString("CompanyMail_english", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Glückwünsch! Bei diesem E-Mail handelte es sich um eine simulierte Phishing-Attacke von Firmen ICT. Sie haben richtig reagiert!.
+        ///   Looks up a localized string similar to Diese Funktion steht nicht zur Verfügung, da das E-Mail von Company stammt..
         /// </summary>
-        internal static string FakeMessage_Text_german {
+        internal static string CompanyMail_german {
             get {
-                return ResourceManager.GetString("FakeMessage_Text_german", resourceCulture);
+                return ResourceManager.GetString("CompanyMail_german", resourceCulture);
             }
         }
         
@@ -116,7 +116,25 @@ namespace PhishingReporter.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Thank you for helping to make our Company more secure.
+        ///   Looks up a localized string similar to This and any future emails from this sender will automatically be moved to your Junk-E-Mail folder..
+        /// </summary>
+        internal static string SpamText_english {
+            get {
+                return ResourceManager.GetString("SpamText_english", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Diese wie auch zukünftige E-Mails dieses Absenders werden automatisch in den Junk-E-Mail Ordner verschoben..
+        /// </summary>
+        internal static string SpamText_german {
+            get {
+                return ResourceManager.GetString("SpamText_german", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Thank you for helping to make our company more secure..
         /// </summary>
         internal static string ThankYouMsgBox_Text_english {
             get {
@@ -125,7 +143,7 @@ namespace PhishingReporter.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Vielen Dank für Ihre mithilfe die Firma sicherer zu machen.
+        ///   Looks up a localized string similar to Vielen Dank für Ihre Mithilfe unsere Firma sicherer zu machen..
         /// </summary>
         internal static string ThankYouMsgBox_Text_german {
             get {

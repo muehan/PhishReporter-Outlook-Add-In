@@ -15,30 +15,6 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_10FD8D841BD95EEE09D6D3E55CC55DB3"
-        "OwnerKey" = "8:_959A01E9BB382DC10F4BACE1A651EFC6"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_10FD8D841BD95EEE09D6D3E55CC55DB3"
-        "OwnerKey" = "8:_E3D8FE61181B41E5949ADA5FEF0EE1BD"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_10FD8D841BD95EEE09D6D3E55CC55DB3"
-        "OwnerKey" = "8:_EB23D3699E6F9C05ADE981A8B9AEBD4A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_10FD8D841BD95EEE09D6D3E55CC55DB3"
-        "OwnerKey" = "8:_32628395E8454AE5AF069C6FF191F70C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_1FF90E6977D04B19AE743D5EAE079D11"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -93,6 +69,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_73E0A4FBC737AA911846FA96D0479135"
+        "OwnerKey" = "8:_EB23D3699E6F9C05ADE981A8B9AEBD4A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_8434C2A49E720980C935F2F2DCCB2485"
         "OwnerKey" = "8:_4AE6004A5EDC4615670DB403467962FC"
         "MsmSig" = "8:_UNDEFINED"
@@ -111,19 +93,13 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_959A01E9BB382DC10F4BACE1A651EFC6"
-        "OwnerKey" = "8:_32628395E8454AE5AF069C6FF191F70C"
+        "MsmKey" = "8:_BBEA4AA3E21E6DFFE2FCA8E9F4464B8B"
+        "OwnerKey" = "8:_73E0A4FBC737AA911846FA96D0479135"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_959A01E9BB382DC10F4BACE1A651EFC6"
-        "OwnerKey" = "8:_E3D8FE61181B41E5949ADA5FEF0EE1BD"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_959A01E9BB382DC10F4BACE1A651EFC6"
+        "MsmKey" = "8:_BBEA4AA3E21E6DFFE2FCA8E9F4464B8B"
         "OwnerKey" = "8:_EB23D3699E6F9C05ADE981A8B9AEBD4A"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -148,19 +124,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_10FD8D841BD95EEE09D6D3E55CC55DB3"
+        "OwnerKey" = "8:_32628395E8454AE5AF069C6FF191F70C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_E3D8FE61181B41E5949ADA5FEF0EE1BD"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_32628395E8454AE5AF069C6FF191F70C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -190,13 +160,19 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_399BB9D358B59FEF82C546DCEDE66C62"
+        "OwnerKey" = "8:_73E0A4FBC737AA911846FA96D0479135"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_959A01E9BB382DC10F4BACE1A651EFC6"
+        "OwnerKey" = "8:_BBEA4AA3E21E6DFFE2FCA8E9F4464B8B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_399BB9D358B59FEF82C546DCEDE66C62"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -294,37 +270,6 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_10FD8D841BD95EEE09D6D3E55CC55DB3"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Microsoft.Office.Tools, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_10FD8D841BD95EEE09D6D3E55CC55DB3"
-                    {
-                    "Name" = "8:Microsoft.Office.Tools.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Microsoft.Office.Tools.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_37E5A0CD62F743B09999D726BD735460"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1FF90E6977D04B19AE743D5EAE079D11"
             {
             "SourcePath" = "8:..\\PhishingReporter\\bin\\Release\\PhishingReporter.dll.manifest"
@@ -458,6 +403,37 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_73E0A4FBC737AA911846FA96D0479135"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:TRUE"
+            "AssemblyAsmDisplayName" = "8:Microsoft.Office.Tools.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_73E0A4FBC737AA911846FA96D0479135"
+                    {
+                    "Name" = "8:Microsoft.Office.Tools.Common.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Microsoft.Office.Tools.Common.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_37E5A0CD62F743B09999D726BD735460"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_8434C2A49E720980C935F2F2DCCB2485"
             {
             "AssemblyRegister" = "3:1"
@@ -489,20 +465,20 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_959A01E9BB382DC10F4BACE1A651EFC6"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_BBEA4AA3E21E6DFFE2FCA8E9F4464B8B"
             {
             "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Microsoft.Office.Tools.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
+            "AssemblyIsInGAC" = "11:TRUE"
+            "AssemblyAsmDisplayName" = "8:Microsoft.Office.Tools, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_959A01E9BB382DC10F4BACE1A651EFC6"
+                    "_BBEA4AA3E21E6DFFE2FCA8E9F4464B8B"
                     {
-                    "Name" = "8:Microsoft.Office.Tools.Common.dll"
+                    "Name" = "8:Microsoft.Office.Tools.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:Microsoft.Office.Tools.Common.dll"
+            "SourcePath" = "8:Microsoft.Office.Tools.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_37E5A0CD62F743B09999D726BD735460"
@@ -524,14 +500,9 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:PhishingReporter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:PhishingReporter, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_E3D8FE61181B41E5949ADA5FEF0EE1BD"
-                    {
-                    "Name" = "8:PhishingReporter.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:..\\PhishingReporter\\bin\\Release\\PhishingReporter.dll"
             "TargetName" = "8:"
@@ -637,17 +608,17 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:Pilatus Phishing AddIn"
-        "ProductCode" = "8:{DC382F12-713A-449C-B37F-4127BDE3496C}"
-        "PackageCode" = "8:{3D855235-4F0B-47B0-80B5-0453713EDAD9}"
-        "UpgradeCode" = "8:{B3FCA014-1C04-45CC-8C85-2DA8A50FF853}"
+        "ProductName" = "8:Company Phishing AddIn"
+        "ProductCode" = "8:{CF8B0B44-031A-4B68-9DDD-0B1629C4E27C}"
+        "PackageCode" = "8:{52BB24EF-CCC0-40FB-BB40-4786FEA4213F}"
+        "UpgradeCode" = "8:{3D0C15A6-092B-4508-BBDD-E4ECEF71E2B8}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
-        "Manufacturer" = "8:Pilatus Aircraft Ltd"
+        "ProductVersion" = "8:1.1.2"
+        "Manufacturer" = "8:asdf Compnay Ltd"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
         "Title" = "8:SetupPhishAddIn"
@@ -718,7 +689,7 @@
                                                         {
                                                             "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_55AD4A5C32354176B85E13D0097CD4A0"
                                                             {
-                                                            "Name" = "8:Pilatus-PhishingAddIn"
+                                                            "Name" = "8:PhishingAddIn"
                                                             "Condition" = "8:"
                                                             "AlwaysCreate" = "11:FALSE"
                                                             "DeleteAtUninstall" = "11:TRUE"
@@ -731,7 +702,7 @@
                                                                     "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_1FC59263A23E4A75A8238C8E187A0744"
                                                                     {
                                                                     "Name" = "8:FriendlyName"
-                                                                    "Condition" = "8:Pilatus Phising Report AddIn"
+                                                                    "Condition" = "8:Phising Report AddIn"
                                                                     "Transitive" = "11:FALSE"
                                                                     "ValueTypes" = "3:1"
                                                                     "Value" = "8:"
@@ -750,7 +721,7 @@
                                                                     "Condition" = "8:"
                                                                     "Transitive" = "11:FALSE"
                                                                     "ValueTypes" = "3:1"
-                                                                    "Value" = "8:Pilatus PhishingAddIn"
+                                                                    "Value" = "8:PhishingAddIn"
                                                                     }
                                                                     "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_B9E802F141CF4ABA8ADBABE7E82E7402"
                                                                     {
@@ -1220,7 +1191,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_32628395E8454AE5AF069C6FF191F70C"
             {
-            "SourcePath" = "8:..\\PhishingReporter\\obj\\Release\\PhishingReporter.dll"
+            "SourcePath" = "8:..\\PhishingReporter\\obj\\Debug\\PhishingReporter.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_37E5A0CD62F743B09999D726BD735460"

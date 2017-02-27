@@ -124,22 +124,28 @@
   <data name="MessageBox_Title" xml:space="preserve">
     <value>Company - ICT Security</value>
   </data>
-  <data name="FakeMessage_Text_english" xml:space="preserve">
-    <value>Congratulations! The email you reported was a simulated phishing attack initiated by Company ICT. Good job!</value>
-  </data>
   <data name="ThankYouMsgBox_Text_german" xml:space="preserve">
-    <value>Vielen Dank für Ihre mithilfe die Firma sicherer zu machen</value>
-  </data>
-  <data name="FakeMessage_Text_german" xml:space="preserve">
-    <value>Glückwünsch! Bei diesem E-Mail handelte es sich um eine simulierte Phishing-Attacke von Firmen ICT. Sie haben richtig reagiert!</value>
+    <value>Vielen Dank für Ihre Mithilfe unsere Firma sicherer zu machen.</value>
   </data>
   <data name="ThankYouMsgBox_Text_english" xml:space="preserve">
-    <value>Thank you for helping to make our Company more secure</value>
+    <value>Thank you for helping to make our company more secure.</value>
   </data>
   <data name="NoMessageText_english" xml:space="preserve">
     <value>Please Select a message To Continue</value>
   </data>
   <data name="NoMessageText_german" xml:space="preserve">
     <value>Bitte eine Nachricht markieren</value>
+  </data>
+  <data name="SpamText_german" xml:space="preserve">
+    <value>Diese wie auch zukünftige E-Mails dieses Absenders werden automatisch in den Junk-E-Mail Ordner verschoben.</value>
+  </data>
+  <data name="SpamText_english" xml:space="preserve">
+    <value>This and any future emails from this sender will automatically be moved to your Junk-E-Mail folder.</value>
+  </data>
+  <data name="CompanyMail_english" xml:space="preserve">
+    <value>This function cannot be executed since the email origins within Company.</value>
+  </data>
+  <data name="CompanyMail_german" xml:space="preserve">
+    <value>Diese Funktion steht nicht zur Verfügung, da das E-Mail von Company stammt.</value>
   </data>
 </root>

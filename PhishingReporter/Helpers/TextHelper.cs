@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace PhishingReporter.Helpers
+﻿namespace PhishingReporter.Helpers
 {
+    using System;
+
     using PhishingReporter.Properties;
 
     public static class TextHelper
@@ -10,14 +10,13 @@ namespace PhishingReporter.Helpers
         {
             if (lang == Language.German)
             {
-                return "Diese markierte Nachricht wird weitergeleitet an "
-                                   + PhishReporterConfig.SecurityTeamEmailAlias + Environment.NewLine
-                                   + "und aus Ihrem Posteingang entfernt. Möchten Sie fortfahren?";
+                return "Handelt es sich bei dieser E-Mail um Spam (z.B. Newsletter, Marketing-Kampagne, etc.)\n\r"
+                     + "oder um eine Phishing-Attacke (z.B. Bekanntgabe von Usernamen, Passwörter,\n\r"
+                     + "Kreditkarteninformationen, Zahlungsfreigaben etc.)?";
             }
 
-            return "The selected message will be forwarded to "
-                                 + PhishReporterConfig.SecurityTeamEmailAlias + Environment.NewLine
-                                 + " and removed from your inbox. Would you like to continue?";
+            return "Is this a Spam email (e.g. newsletter, marketing campaign, etc.) or a Phishing-Attack\n\r"
+                 + "(e.g. asking for username, passwords, credit card information, request for payment etc.)?";
 
         }
 
@@ -25,10 +24,12 @@ namespace PhishingReporter.Helpers
         {
             if (lang == Language.German)
             {
-                return Resources.FakeMessage_Text_german;
+                return
+                    "Glückwünsch! Bei diesem E-Mail handelte es sich um eine simulierte Phishing-Attacke von asdf AG. Sie haben richtig reagiert!\n\r\n\rBitte haben Sie etwas Geduld, bis das E-Mail gelöscht wird.";
             }
 
-            return Resources.FakeMessage_Text_english;
+            return
+                "Congratulations! The email you reported was a simulated phishing attack initiated by asdf Ltd. Good job!\n\r\n\rPlease be patient while the email is being deleted.";
         }
 
         public static string ThankYouMessage(Language lang)
@@ -49,6 +50,27 @@ namespace PhishingReporter.Helpers
             }
 
             return Resources.NoMessageText_english;
+        }
+
+        public static string SpamAddedText(Language lang)
+        {
+
+            if (lang == Language.German)
+            {
+                return Resources.SpamText_german;
+            }
+
+            return Resources.SpamText_english;
+        }
+
+        public static string CompanyMailMessage(Language lang)
+        {
+            if (lang == Language.German)
+            {
+                return Resources.CompanyMail_german;
+            }
+
+            return Resources.CompanyMail_english;
         }
     }
 }

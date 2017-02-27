@@ -2,7 +2,7 @@
 {
     using System.Windows.Forms;
 
-    class PhishingReporterMessageBox : Form
+    public class PhishingReporterMessageBox : Form
     {
         private Button ButtonPhishing;
         private Button ButtonSpam;
@@ -16,19 +16,22 @@
             InitializeComponent();
         }
 
-        public DialogResult Show(string text)
+        public DialogResult Show(string formTitle, string text)
         {
             lableText.Text = text;
-
+            this.Text = formTitle;
+            this.CenterToScreen();
+            
             return this.ShowDialog();
         }
 
         private void InitializeComponent()
         {
-            this.lableText = new Label();
-            this.ButtonPhishing = new Button();
-            this.ButtonSpam = new Button();
-            this.ButtonCancel = new Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PhishingReporterMessageBox));
+            this.lableText = new System.Windows.Forms.Label();
+            this.ButtonPhishing = new System.Windows.Forms.Button();
+            this.ButtonSpam = new System.Windows.Forms.Button();
+            this.ButtonCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lableText
@@ -76,6 +79,7 @@
             this.Controls.Add(this.ButtonSpam);
             this.Controls.Add(this.ButtonPhishing);
             this.Controls.Add(this.lableText);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PhishingReporterMessageBox";
             this.ResumeLayout(false);
             this.PerformLayout();
